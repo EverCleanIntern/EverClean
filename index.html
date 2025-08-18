@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverClean</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <div class="left-section">
+                <img class="logo" src="Img/logo.jpeg" alt="">
+                <label class="label" for="">EverClean</label>
+            </div>
+
+            <ul class="middle-section">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li onclick=" hideSidebar()"><img class="menu-remove" src="Img/cancel.png" alt=""></li>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <div class="right-section">
+                <button ><a href="">Join</a></button>
+                <img onclick="
+                showSidebar()
+            " class="menu" src="Img/menu.png" alt="">
+            </div>
+    </header>
+
+    <main>
+       <div class="top">
+          <img class="home-img" src="Img/Volvo FM12.jpg" alt="">
+       </div>
+
+       <div class="bottom">
+            <div class="h1">
+                <h1>How it works</h1>
+            </div>
+
+            <div class="HIW">
+                <div class="explain-div">
+                    <img src="Img/images.jpeg" alt="">
+                    <h4>Book a Pickup</h4>
+                    <p>Schedule a pickup by 
+                    providing your address 
+                    preferred time.</p>
+                </div> 
+
+                <div class="explain-div">
+                    <img src="Img/residential-waste-collection-flat-color-icon-garbage-pickup-from-home-household-waste-residential-services-disposing-refuse-cartoon-style-clip-art-for-mobile-app-isolated-rgb-illustration-vector (1).jpg" alt="">
+                    <h4>Garbage Pickup</h4>
+                    <p>Our team will arrive 
+                    at your location to 
+                    colect the garbage.
+                </div>
+
+                <div class="explain-div">
+                    <img src="Img/images (2).jpeg" alt="">
+                    <h4>Book a Pickup</h4>
+                    <p>Pay online or in cash
+                    after the pickup
+                    has been completed.
+                </div>
+            </div>
+
+            <div class="book-now">
+                <p>Ready for cleaner surroundings? Let's get started</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+         <p class="Copyright">Copyright &copy; 2025 <label class="label">EverClean</label> All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>

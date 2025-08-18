@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+     <header>
+            <div class="left-section">
+                <img class="logo" src="Img/logo.jpeg" alt="">
+                <label class="label" for="">EverClean</label>
+            </div>
+
+            <ul class="middle-section">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li onclick=" hideSidebar() "><img class="menu-remove" src="Img/cancel.png" alt=""></li>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <div class="right-section">
+                <button ><a href="">Join</a></button>
+                <img onclick="
+                showSidebar()
+            " class="menu" src="Img/menu.png" alt="">
+            </div>
+    </header>
+
+    <main>
+        <div>
+            <img class="top-img" src="Img/A garbage truck is a truck specially designed to….jpg" alt="">
+        </div>
+
+        <div class="bottom">
+            <div class="h2">
+                <h2>Our Services</h2>
+                <p>We offer a range of waste management services to suit your needs.</p>
+            </div>
+
+           <div class="services-container">
+                <div class="service">
+                    <div class="left">
+                        <img src="Img/icons8-dustbin-65.png" alt="">
+                        <h3>Household Waste Pickup</h1>
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            Regular waste collection for your home.
+                        </p>
+
+                        <button type="button" class="booknow" onclick="showOrder()">
+                            Book.Now
+                        </button>
+                    </div>
+                </div>
+
+               <div class="service">
+                    <div class="left">
+                        <img  src="Img/icons8-recycling-symbol-48.png" alt="">
+                        <h3>Recycling Services</h3>
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            Eco-friendly recycling solutions.
+                        </p>
+
+                        <button>
+                            Book.Now
+                        </button>
+                    </div>
+                </div>
+
+               <div class="service">
+                    <div class="left">
+                        <img src="Img/icons8-eco-factory-32.png" alt="">
+                        <h3>Company/Industrail Waste collection</h3>
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            Efficient waste disposal for businesses.
+                        </p>
+
+                        <button>
+                            Book.Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="left">
+                        <img src="Img/icons8-dustbin-65.png" alt="">
+                        <h3>Special Request Pickup</h3>
+                    </div>
+
+                    <div class="right">
+                        <p>
+                            Large or bulk item pikups.
+                        </p>
+
+                        <button>
+                            Book.Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+              <!-- Booking page-->
+        <div class="order">
+            <h2>Book a Pickup</h2>
+            <p>Schedule a pickup by providing your details below.</p>
+            <div class="booking">
+                <label for="name"> Waste qauntity</label>
+                <select name="Waste Qauntity" id="" class="select">
+                    <option value="text"> Small (20kg - 50kg)</option>
+                    <option value="text"> Meduim (50kg - 150kg)</option>
+                    <option value="text"> Large (150kg and above)</option>
+                </select>
+            </div>
+
+            <div class="booking">
+                <label for="name"> Waste Type</label>
+                <select name="Waste Qauntity" id="" class="select">
+                    <option value="househould"> Household</option>
+                    <option value="plastic"> Plastic</option>
+                    <option value="glass"> Glass</option>
+                    <option value="organic">Organic</option>
+                </select>
+            </div>
+
+            <div class="booking">
+                <label for="name" > Pickup Date</label>
+                <input type="date" name="" id="" class="select">
+            </div>
+
+            <div class="booking" >
+                <button class="submit" onclick="hideOrder()">Submit</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+         <p class="Copyright">Copyright &copy; 2025 <label class="label">EverClean</label> All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+        function showOrder(){
+            const order = document.querySelector('.order');
+            order.style.display = 'flex';
+        }
+
+        function hideOrder(){
+            const order = document.querySelector('.order');
+            order.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

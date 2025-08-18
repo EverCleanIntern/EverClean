@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+Main
+*/
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    margin-top: 61px;
+}
+
+.bottom{
+    transform: translateY(-10%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    box-shadow: 0 2px 5px rgb(125, 122, 122);
+    margin-right: 10vh;
+    margin-left: 10vh;
+    border-radius: 5px;
+}
+
+.HIW{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media(max-width:666px){
+    main{
+    display: flex;
+    flex-direction: column;
+    margin: 0.1%;
+    }
+    
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .HIW{ 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explain-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HIW p{
+    line-height: 25px
+    }
+    .HIW h4{
+        line-height: 0px;
+    }
+}
+
+.HIW img{
+    width: 15vh;
+    margin-left: 10px;
+}
+
+.HIW h4{
+    line-height: 1px;
+}
+
+.HIW p{
+   margin-top: -9 px;
+}
+
+.book-now{
+    background-color: rgb(3, 214, 3);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.book-now p{
+    font-size: 20px;
+    font-weight:400;
+}
+
+.book-now button{
+    width: 20vh;
+    height: 4vh;
+    margin-bottom: 5px;
+}
+
+.Copyright{
+    font-family:Arial, Helvetica, sans-serif ;
+}
