@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scalew=0.1">
+<title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    
+    </head>
+
+    <body>
+
+    <div class="top">
+        <img class="logo" src="Img/logo.jpeg" alt="">
+        <label class="label" for="">EverClean</label>
+    </div>
+
+    <div class="bottom">
+        <div class="container">
+           <div class="formbox active" Id="login-form">
+                <form action=""  >
+                    <h2>login</h2>
+                    <input type="email" name="email" placeholder="email" required>
+                    <input type="password" naame="password" placeholder="password" required>
+                    <button type="submit" name="login" >Login</button>
+                    <p>don't have an account yet? <a href="#" onclick="showForm()">Register</a></p>
+
+                </form>
+            </div>
+        </div>  
+
+
+
+        <div class="formbox" Id="register-form">
+            <form action=""  >
+                <h2>Register</h2>
+                <input type="name" name="name" placeholder="name" required>
+                <input type="email" name="email" placeholder="email" required>
+                <input type="password" naame="password" placeholder="password" required>
+                <select name="role" required>
+                    <option value="">--select role--</option>
+                    <option value="user">User</option>
+                    <option value="garbageCollector">Garbage Collector</option>
+                </select>
+                <button type="submit" name="register" >Register</button>
+                <p>Already  have an account? <a href="#"  onclick="showLoginForm()">login</a></p>
+
+            </form>
+        </div>    
+        </div>
+
+    </div>
+</body>
+
+<script src="script.js">
+        function showForm(){
+            const formbox = document.querySelector('.formbox')
+            formbox.style.display = 'flex'
+        }
+
+        function hideForm(){
+            const sidebar = document.querySelector('.')
+            sidebar.style.display = 'none'
+        }
+</script>
+
+</html>

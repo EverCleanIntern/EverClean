@@ -1,8 +1,9 @@
 body{
     margin: 0;
+    line-height: 1.6;
     padding: 0;
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'poppins' ,sans-serif;
 }
 /*
 Main
@@ -111,4 +112,17 @@ main{
 
 .Copyright{
     font-family:Arial, Helvetica, sans-serif ;
+}
+
+/*
+footer
+*/
+
+footer{
+    background-color: green;
+    padding: 1%;
+}
+
+footer .label{
+    color: rgb(18, 33, 10,0.7);
 }
