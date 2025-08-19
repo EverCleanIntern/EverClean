@@ -4,6 +4,12 @@ body{
     font-family:'poppins' ,sans-serif;
 }
 
+@media(max-width:666px){
+    body{
+        padding: 2%;
+    }
+}
+
 main{
     display: flex;
     flex-direction: column;
