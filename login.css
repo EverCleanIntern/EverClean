@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(41, 238, 27);
-    min-height: 100vh;
+    height: 100vh;
     color: #333;
 }
 
@@ -40,7 +40,7 @@ body{
     margin-left: 0%;
 }
 .container{
-    margin: 0 15px;
+    margin:0 15px;
 }
 .formbox{
     display: none;

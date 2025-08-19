@@ -22,18 +22,19 @@ main{
 }
 
 form{
-     border: solid 1px rgb(224, 218, 218);
-    box-shadow: -0.5px 0px 5px;
+    border: solid 1px rgb(239, 235, 235);
+    box-shadow: -0.5px 0px 5px rgb(227, 223, 223);
     border-radius: 10px;
     justify-items: center;
     align-items: center;
+    padding: 2%;
 }
 
 .bottom{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin-left: 3vh;
     margin-right: 3vh;
     border-radius: 10px;
@@ -61,41 +62,52 @@ form{
     margin: 5%;
 }
 
-.left input, .message-boX{
+.left input{
     padding: 1.5% 2vh;
-    border: 1px solid green;
+    border: 1px solid rgb(150, 181, 150);
     border-radius: 5px;
     margin-bottom: 5%;
     box-shadow: 0 0 1px;
     outline: none;
 }
 
+textarea{
+    padding: 0.1% 2vh;
+    width: 90%;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 1px;
+    outline: none;
+}
+
+.left input,
+.left textarea{
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
 .right{
-    max-width: 50%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
 .right img{
     width: 15%;
     border-radius: 50%;
-}
-
-.right div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-}
-
-.three{
-    margin-left: 43px;
-}
-
-.one{
-    margin-right: 20px;
 }
 
 .name,.phone,.email,.message{
@@ -122,7 +134,7 @@ button{
     height: 30px;
     margin-left: 5%;
     margin-bottom: 10%;
-    background-color: green;
+    background-color: rgb(37, 212, 37);
     justify-items: center;
     align-items: center;
     
