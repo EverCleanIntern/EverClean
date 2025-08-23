@@ -1,5 +1,6 @@
 body{
-    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 main{
@@ -12,8 +13,8 @@ main div{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    padding: 10px;
+    width: 97%;
+    padding: 1%;
 }
 
 h1{
@@ -48,7 +49,6 @@ h2{
     width: 70%;
     padding-left: 2%;
     padding-right: 2%;
-    min-height: 20vh;
     line-height: 1.5;
 }
 
@@ -78,8 +78,8 @@ button:hover{
 
 .Disconnect{
     position: absolute;
-    right: 10px;
-    top: 13%;
+    right: 5%;
+    top: 11%;
     width: 30%;
 }
 
@@ -96,10 +96,10 @@ a{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1px;
+        justify-items: center;
     }
     .info-div{
-        min-width: 85%;
-        margin-left: 5%;
+        min-width: 80%;
         margin-top: 2%;
         margin-right: 1%;
     }
