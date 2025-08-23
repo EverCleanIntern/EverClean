@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header>
+            <div class="left-section">
+                <img class="logo" src="Img/logo.jpeg" alt="">
+                <label class="label" for="">EverClean</label>
+            </div>
+
+            <ul class="middle-section">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <ul class="sidebar">
+                <li onclick=" hideSidebar()"><img class="menu-remove" src="Img/cancel.png" alt=""></li>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <li><a href="Service.html"><span>Services</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a href="feedback.html"><span>Feedbacks</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+            </ul>
+
+            <div class="right-section">
+                <button ><a href="login.html">Join</a></button>
+                <img onclick="
+                showSidebar()
+            " class="menu" src="Img/menu.png" alt="">
+            </div>
+    </header>
+
+    <main>
+       <div>
+        <a href="login.html"><button class="Disconnect">Disconnect</button></a>
+         <h1>Welcome back @user</h1>
+       </div>
+        <h2>Dashboard</h1>
+
+
+        <div class="container">
+        <div class="top">
+            <div class="info-div">
+                <label>Next collection</label>
+                <span>23 August,05:00 AM</span>
+                <label for="">On the way</label>
+            </div>
+
+            <div class="info-div">
+                <label for="">Collections this month</label>
+                <span>4</span>
+            </div>
+
+            <div class="info-div">
+                <label for="">Balance</label>
+                <span>0 XAF</span>
+            </div>
+
+            <div class="info-div">
+                <label for="">Avrage Rating</label>
+                <span>4.5/5</span>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="info-div">
+                <label>New collection</label>
+                <span>Plan in 1 minute</span>
+                <a href="Service.html"> <button>Order</button></a>
+            </div>
+
+            <div class="info-div">
+                <label for="">My collections</label>
+                <span>Track and voew history</span>
+                <button>View</button>
+            </div>
+
+            <div class="info-div">
+                <label for="">Payments</label>
+                <span>PDF invoices.</span>
+                <button>Check</button>
+            </div>
+
+            <div class="info-div">
+                <label for="">Average rating</label>
+                <span>4.5/5</span>
+            </div>
+        </div>
+        </div>
+    </main>
+    
+     <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+</html>

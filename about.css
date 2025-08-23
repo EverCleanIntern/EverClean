@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    line-height: 1.7rem;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -52,6 +53,7 @@ main{
     .values-div{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
     }
 }
 
