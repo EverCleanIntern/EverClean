@@ -7,163 +7,136 @@ body{
 main{
     font-display: flex;
     flex-direction: column;
-}
-
-.top-img{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-.h2{
-    justify-items: center;
-}
-
-.services-container{
+    padding: 10px;
     margin-top: 15%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5%;
-    row-gap: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-@media(max-width:666px){
-    .services-container{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .bottom{
-    transform: translateY(-7%);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid;
-    margin-left: 3%;
-    margin-right: 3%;
-    box-shadow: -0.1px 2px 5px;
-    border-radius: 10px;
-    padding: 2%;
-}
-
-.service{
-    background-color: rgb(103, 255, 92, 0.9);
-    height: 18rem;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 10px;
-    margin-bottom: 3%;
-}
-
-@media(max-width:666px){
-    .service{
-        display: flex;
-        flex-direction: column;
-    }
+    width: 100%;
 }
 
 .left{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-}
-
-.left img{
-    width: 70px;
-    border-radius: 5px;
+    padding: 2%;
+    flex: 1;
 }
 
 .right{
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    flex: 1;
 }
+
+div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+select{
+    width: 100%;
+    margin-left: 0;
+    outline: none;
+    background-color: rgb(244, 247, 244);
+    padding: 3%;
+    border: 1px solid rgb(225, 217, 217);
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(225, 215, 215);
+        transition: opacity 0.5s;
+}
+
+select:hover{
+    opacity: 0.5;
+}
+
+input{
+    padding: 3%;
+    border: 1px solid rgb(227, 225, 225);
+    border-radius: 10px;
+    background-color: rgb(244, 247, 244);
+    outline: none;
+    box-shadow: 1px 2px 5px rgb(209, 207, 207);
+    transition: opacity 0.5s;
+}
+
+input:hover{
+    opacity: 0.5;
+}
+
 @media(max-width:666px){
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
     .left{
         display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-        align-items: center;
-        justify-items: center;
+        flex-direction: column;
     }
     .right{
         display: flex;
         flex-direction: column;
-        justify-items: center;
-        align-items: center;
     }
 }
 
-button{
-    width: 70%;
-    height: 40px;
-    background-color: rgba(248, 246, 246, 0.5);
+.button{
+    height: 8vh;
+    background-color: rgba(7, 207, 37, 0.906);
     border: 1px solid;
     border-radius: 10px;
     cursor: pointer;
+    transform: opacity 0.5s;
+    flex: 1;
 }
 
-@media(max-width:666px){
-    button{
-        width: 200px;
-        height: 40px;
-        background-color: rgb(223, 233, 243, 0.5);
-        backdrop-filter: blur(10px);
-        align-items: center;
-        justify-items: center; 
-    }
+.buttonn{
+    border: 0px ;
+    height: 10px;
+    background-color: rgba(7, 207, 37, 0.906);
+    border-radius: 10px;
+    cursor: pointer;
+    transform: opacity 0.5s;
+    flex: 1;
 }
 
-/* Booking section */
-.order{
-    display: none;
-    position: absolute;
-    top: 40%;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin-top: 20px;
-    background-color: rgb(255, 255, 255,0.7);
-    backdrop-filter: blur(10px);
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+.buttonm{
+    height: 5vh;
+    background-color: rgba(7, 207, 37, 0.906);
     border: 1px solid;
     border-radius: 10px;
+    cursor: pointer;
+    transform: opacity 0.5s;
+    flex: 1;
 }
 
-@media(max-width:666px){
-    .order{
-        margin-left: 2%;
-        margin-right: 2%;
-        width: 96%;
-    }
+.button:hover{
+    opacity: 0.8;
 }
-.booking{
+
+.payment{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin-top: 20px;
-    margin-bottom: 2%;
-    width: 100%;
+    padding: 2%;
 }
 
-.select{
-    border: 1px solid;
-    border-radius: 5px;
-    width: 60%;
-    padding: 2%;
-    margin: 2%;
+.amount{
+    padding: 3%;
+    border: 1px solid rgb(227, 225, 225);
+    border-radius: 10px;
+    background-color: rgb(244, 247, 244);
     outline: none;
+    box-shadow: 1px 2px 5px rgb(209, 207, 207);
+    transition: opacity 0.5s;
 }
 
 .submit{
-    background-color: rgb(103, 255, 92);
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
 }
 
 /*
@@ -173,6 +146,7 @@ footer
 footer{
     background-color: green;
     padding: 1%;
+    text-align: center;
 }
 
 footer .label{

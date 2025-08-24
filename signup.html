@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewpoint" content="width=device-width, initial-scalew=0.1">
+<title>Login</title>
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    
+    </head>
 <body>
-    <main>
+<main>
     <div class="top">
         <img class="logo" src="Img/logo.jpeg" alt="logo">
         <label class="label" for="">EverClean</label>
@@ -25,16 +26,32 @@
             <option value="">Garbage collector</option>
         </select><br>
 
+        <label for="name">Full name</label><br>
+        <input type="text"><br>
+        
         <label for="email">Email</label><br>
         <input type="email"><br>
     
         <label for="name">Password</label><br>
         <input type="password"><br>
 
-       <span>Don't yet have account? <a href="signup.html">Sign-Up</a></span>
+       <span>Already have an account? <a href="login.html">Login</a></span>
 
        <button>Creat account</button>
     </form>
 </main>
 </body>
+
+<script src="script.js">
+        function showForm(){
+            const formbox = document.querySelector('.formbox')
+            formbox.style.display = 'flex'
+        }
+
+        function hideForm(){
+            const sidebar = document.querySelector('.')
+            sidebar.style.display = 'none'
+        }
+</script>
+
 </html>

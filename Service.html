@@ -34,8 +34,8 @@
                 <li><a href="about.html"><span>About</span></a></li>
             </ul>
 
-            <div class="right-section">
-                <button ><a href="">Join</a></button>
+             <div class="right-section">
+                <button ><a href="login.html">Join</a></button>
                 <img onclick="
                 showSidebar()
             " class="menu" src="Img/menu.png" alt="">
@@ -43,119 +43,71 @@
     </header>
 
     <main>
-        <div>
-            <img class="top-img" src="Img/A garbage truck is a truck specially designed to….jpg" alt="">
+       <h1>
+        New Collection
+       </h1>
+
+       <div class="bottom">
+        <div class="left">
+            <div>
+                <label for="">Category</label>
+                <select name="" id="">
+                    <option value="">Make a choise</option>
+                    <option value="">Household</option>
+                    <option value="">Plastic</option>
+                    <option value="">Glass</option>
+                    <option value="">Organic</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="name">Photo (URL)</label>
+                <input placeholder="https://..." type="text">
+            </div>
+
+            <div>
+                <label for="">Time slot</label>
+                <input type="date">
+            </div>
         </div>
 
-        <div class="bottom">
-            <div class="h2">
-                <h2>Our Services</h2>
-                <p>We offer a range of waste management services to suit your needs.</p>
+        <div class="right">
+            <div>
+                <label for="">Address</label>
+                <input type="text" placeholder="Rue,ville">
+
             </div>
 
-           <div class="services-container">
-                <div class="service">
-                    <div class="left">
-                        <img src="Img/icons8-dustbin-65.png" alt="">
-                        <h3>Household Waste Pickup</h1>
-                    </div>
-
-                    <div class="right">
-                        <p>
-                            Regular waste collection for your home.
-                        </p>
-
-                        <button type="button" class="booknow" onclick="showOrder()">
-                            Book.Now
-                        </button>
-                    </div>
-                </div>
-
-               <div class="service">
-                    <div class="left">
-                        <img  src="Img/icons8-recycling-symbol-48.png" alt="">
-                        <h3>Recycling Services</h3>
-                    </div>
-
-                    <div class="right">
-                        <p>
-                            Eco-friendly recycling solutions.
-                        </p>
-
-                        <button class="booknow" onclick="showOrder()">
-                            Book.Now
-                        </button>
-                    </div>
-                </div>
-
-               <div class="service">
-                    <div class="left">
-                        <img src="Img/icons8-eco-factory-32.png" alt="">
-                        <h3>Company/Industrail Waste collection</h3>
-                    </div>
-
-                    <div class="right">
-                        <p>
-                            Efficient waste disposal for businesses.
-                        </p>
-
-                        <button class="booknow" onclick="showOrder()">
-                            Book.Now
-                        </button>
-                    </div>
-                </div>
-
-                <div class="service">
-                    <div class="left">
-                        <img src="Img/icons8-dustbin-65.png" alt="">
-                        <h3>Special Request Pickup</h3>
-                    </div>
-
-                    <div class="right">
-                        <p>
-                            Large or bulk item pikups.
-                        </p>
-
-                        <button class="booknow" onclick="showOrder()">
-                            Book.Now
-                        </button>
-                    </div>
-                </div>
+            <div>
+                <label for="name">Qauntity estimated</label>
+                <select name="" id="">
+                    <option value="">10kg-50kg</option>
+                    <option value="">51kg-100kg</option>
+                    <option value="">101kg-200kg</option>
+                    <option value="">201kg-1000kg</option>
+                    <option value="">1001kg and above</option>
+                </select>
             </div>
+
+            <div>
+                <label for="">Options</label>
+                <select name="" id="">
+                    <option value="">none</option>
+                    <option value="">urgent</option>
+                </select>
+            </div>
+        </div>
        </div>
 
-              <!-- Booking page-->
-        <div class="order">
-            <h2>Book a Pickup</h2>
-            <p>Schedule a pickup by providing your details below.</p>
-            <div class="booking">
-                <label for="name"> Waste qauntity</label>
-                <select name="Waste Qauntity" id="" class="select">
-                    <option value="text"> Small (20kg - 50kg)</option>
-                    <option value="text"> Meduim (50kg - 150kg)</option>
-                    <option value="text"> Large (150kg and above)</option>
-                </select>
+        <div class="payment">
+            <div class="amount">
+                <label for="">Estimated price :4000XAF</label>
             </div>
-
-            <div class="booking">
-                <label for="name"> Waste Type</label>
-                <select name="Waste Qauntity" id="" class="select">
-                    <option value="househould"> Household</option>
-                    <option value="plastic"> Plastic</option>
-                    <option value="glass"> Glass</option>
-                    <option value="organic">Organic</option>
-                </select>
+            
+            <div class="submit">
+                <a class="buttonm" href="payment.html"><button class="buttonn">Proceed to payment</button></a>
+                <button class="button">Save</button>
             </div>
-
-            <div class="booking">
-                <label for="name" > Pickup Date</label>
-                <input type="date" name="" id="" class="select">
-            </div>
-
-            <div class="booking" >
-                <button class="submit" onclick="hideOrder()">Submit</button>
-            </div>
-
         </div>
     </main>
 

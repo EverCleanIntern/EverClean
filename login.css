@@ -1,22 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
-}
 body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(41, 238, 27);
-    height: 100vh;
     color: #333;
+    font-family: "Poppins", serif;
+}
+
+main{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media(max-width:666px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+    }
 }
 
 .top{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     justify-items: center;
     align-items: center;
     margin-bottom: 2%;
@@ -42,17 +49,16 @@ body{
 .container{
     margin:0 15px;
 }
-.formbox{
-    display: none;
-    width: 100%;
+
+form{
+    width: 86%;
     max-width: 450px;
     padding: 30px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
-.formbox.active{
+form.active{
     display: block;
 }
 h2{
@@ -61,20 +67,21 @@ h2{
     margin-bottom: 20px;
 }
 input, select{
-    width: 100%;
+    width: 80%;
     padding: 12px;
-    background: #eee;
+    background-color: rgb(244, 247, 244);
     border: 6px;
     border: none;
     outline: none;
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 button{
-    width: 100%;
+    width: 80%;
     padding: 12px;
-    background:rgb(103, 255, 92, 0.9);
+    background:rgba(25, 235, 10, 0.932);
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -87,12 +94,18 @@ button{
 button:hover{
     background:rgb(103, 255, 92, 0.9);
 }
-p{
-    font-size: 14.5px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-p a {
+
+a {
     color: rgb(103, 255, 92, 0.9);
     text-decoration: none;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    color: green;
+     border: 1px solid green;
+    box-shadow: 1px 1px 1px;
+    font-size: 1.08rem;
 }
