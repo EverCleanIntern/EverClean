@@ -1,21 +1,4 @@
-<?php
-    session_start();
-        $errors = [
-            'login' => $_SESSION['login_error'] ?? '',
-            'register' => $_SESSION['register_error'] ?? '',
-        ];
-        $activeForm = $_SESSION['active_form'] ?? 'login';
 
-    session_unset();
-
-    function showError($error) {
-        return !empty($error) ? "<p class='error-message'>$error</p>" : '';
-    }
-
-    function isActiveForm($formName, $activeForm) {
-        return $formName === $activeForm ? 'acive' : '';
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,12 +17,10 @@
         <label class="label" for="">EverClean</label>
     </div>
 
-    <form action="login_register.php" method="post" <?= isActiveForm('login', $activeForm);?>>
+    <form action="login_register.php" method="post" >
         <h1>
              Create an account
         </h1>
-
-        <?= showError($errors['register']); ?>
 
         <label for="">Role</label><br>
         <select name="" id="" name="Role">
@@ -62,17 +43,5 @@
     </form>
 </main>
 </body>
-
-<script src="script.js">
-        function showForm(){
-            const formbox = document.querySelector('.formbox')
-            formbox.style.display = 'flex'
-        }
-
-        function hideForm(){
-            const sidebar = document.querySelector('.')
-            sidebar.style.display = 'none'
-        }
-</script>
 
 </html>
