@@ -2,7 +2,7 @@ body{
     margin: 0;
     line-height: 1.7rem;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'poppins' ,sans-serif;
 }
 
 /*
@@ -76,6 +76,7 @@ footer
 footer{
     background-color: green;
     padding: 1%;
+    text-align: center;
 }
 
 footer .label{

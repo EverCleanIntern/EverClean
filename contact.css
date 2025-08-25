@@ -153,6 +153,7 @@ footer
 footer{
     background-color: green;
     padding: 1%;
+    text-align: center;
 }
 
 footer .label{
